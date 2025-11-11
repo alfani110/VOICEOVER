@@ -1,0 +1,23 @@
+# API Keys and sensitive data
+*.env
+.env
+config.py
+*_config.py
+
+# Generated audio files
+audio_output/
+voice_tests/
+*.mp3
+*.wav
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
