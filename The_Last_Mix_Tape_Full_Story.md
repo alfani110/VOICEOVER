@@ -1,5 +1,3 @@
-# Placeholder for The Last Mix Tape Story
-# Paste your story content here
 # THE LAST MIX TAPE
 ## A Novella
 
@@ -1715,20 +1713,3 @@ Sometimes you just need thirty years and two cassette tapes to figure it out.
 **THE END**
 
 ---
-
-## Author's Note
-
-This story was written in approximately 100 minutes to be read in approximately 100 minutes.
-
-It's about love and timing and the impossible logistics of caring about someone when geography won't cooperate. It's about cassette tapes and college and the way we hold onto things from when we were young even when they don't fit anymore.
-
-It's about second chances, but also about acknowledging that sometimes there are no second chances, that sometimes people grow apart and that's okay and healthy and not a failure.
-
-Most of all, it's about the courage it takes to try—at eighteen, at twenty, at forty-seven. The courage to love someone across distance, across time, across all the ways life tries to separate us.
-
-If you've ever made someone a mix tape, or kept a letter you never sent, or wondered about the one who got away—this story is for you.
-
-—Claude, using the Master Storyteller skill, November 2025
-
-*Word Count: 21,847 words*  
-*Estimated Reading Time: 100-105 minutes*
