@@ -1,6 +1,6 @@
-# Project Status - The 90s Memory Archive Episode 1
+# Project Status - The 90s Memory Archive
 
-**Last Updated:** 2025-11-11
+**Last Updated:** 2025-11-17
 **Branch:** `claude/check-status-update-011CV2dMjVoJw2CwxYbiuoP5`
 
 ## ✅ Completed
@@ -11,79 +11,100 @@
    - pydub package (v0.25.1) installed
    - ffmpeg installed and verified
 
-2. **Files Created**
+2. **Episode 1 - Blockbuster Memory**
    - `episode_1_blockbuster_ENHANCED.md` - Full script (95,403 chars) ✅
+   - Script complete and ready for voiceover generation
+
+3. **Episode 2 - The Last Mix Tape**
+   - `The_Last_Mix_Tape_Full_Story.md` - Placeholder created ⏳
+   - Awaiting story content (~20,000 words)
+
+4. **Generation Scripts**
    - `generate_voiceover.py` - Main TTS generation script
    - `test_voices.py` - Voice preview/testing script
    - `README.md` - Project documentation
    - `.gitignore` - Protects API keys and generated files
 
-3. **Repository**
+5. **Repository**
    - All files committed
    - Pushed to remote branch
    - API keys excluded from version control (security)
 
-## ⚠️ Current Issue: OpenAI API Access Denied
+## ⚠️ Known Limitation: Claude Code Network Restrictions
 
-**Problem:** The API key provided returns "Access denied" errors.
+**Issue:** Claude Code environment cannot make external API calls to OpenAI.
 
-**Most Likely Cause:** OpenAI account billing not set up
+**Root Cause:** Network/firewall restrictions in the Claude Code execution environment.
 
-### Required Steps to Resolve:
+**Status:** Your OpenAI API key is valid and has credits. The issue is not with your account.
 
-1. **Visit OpenAI Billing:** https://platform.openai.com/account/billing
-   - Add a payment method
-   - Add at least $5 in credits
-   - Wait a few minutes for activation
+### Solution: Run Scripts Locally
 
-2. **Verify API Key:** https://platform.openai.com/api-keys
-   - Check if key is active
-   - If needed, create a new API key
-   - Make sure it has full permissions
-
-3. **Test API Access**
-   - Once billing is set up, the API should work
-   - You can test at: https://platform.openai.com/playground
+The voiceover generation must be run on your local machine or a server with internet access.
 
 ## 📋 Next Steps
 
-### Option A: Continue with Claude Code (Recommended)
-1. Set up billing in your OpenAI account
-2. Come back here with the same or new API key
-3. I'll run the voice tests (~$0.05)
-4. You choose your favorite voice
-5. I'll generate the full voiceover (~$1.50, 15-20 min)
+### To Complete Episode 2:
+1. Paste The Last Mix Tape story content
+2. I'll save it to `The_Last_Mix_Tape_Full_Story.md`
+3. Commit and push to GitHub
 
-### Option B: Run Locally
-1. Clone this repository to your local machine
-2. Set up billing in OpenAI account
-3. Edit the Python files and add your API key
-4. Run the scripts yourself:
-   ```bash
-   python3 test_voices.py      # Generate voice samples
-   python3 generate_voiceover.py  # Generate full voiceover
-   ```
+### To Generate Voiceovers (Run Locally):
 
-## 📊 Expected Results (Once Working)
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/alfani110/VOICEOVER.git
+cd VOICEOVER
+```
+
+**Step 2: Install dependencies**
+```bash
+pip install openai pydub
+# Install ffmpeg (Mac: brew install ffmpeg, Linux: apt-get install ffmpeg)
+```
+
+**Step 3: Add your API key**
+Edit the Python files and replace `YOUR_API_KEY_HERE` with your actual key:
+- `test_voices.py` - Line 16
+- `generate_voiceover.py` - Line 28
+
+**Step 4: Run the scripts**
+```bash
+# Test voices first (recommended)
+python3 test_voices.py
+
+# Generate full voiceover for Episode 1
+python3 generate_voiceover.py
+
+# For Episode 2, edit generate_voiceover.py line 31:
+# Change SCRIPT_FILE = "episode_1_blockbuster_ENHANCED.md"
+# To: SCRIPT_FILE = "The_Last_Mix_Tape_Full_Story.md"
+```
+
+## 📊 Expected Results
 
 **Voice Tests:**
 - 6 MP3 samples in `voice_tests/` directory
 - ~5 seconds each
 - Cost: ~$0.05
 
-**Full Generation:**
+**Episode 1 - Blockbuster (95,403 characters):**
 - Output: `audio_output/Episode_1_Blockbuster_Final.mp3`
 - Duration: ~90-100 minutes
 - File size: ~80-100 MB
 - Processing time: 15-20 minutes
-- Cost: ~$1.50
+- Cost: ~$1.43
+
+**Episode 2 - The Last Mix Tape (~20,000 words):**
+- Similar duration and cost to Episode 1
+- Awaiting story content to calculate exact estimate
 
 ## 🔒 Security Note
 
-Your API key is NOT stored in the git repository. You'll need to:
-- Provide it again when ready to generate
-- Or manually edit the Python files before running locally
+Your API key is NOT stored in the git repository for security. The Python scripts use placeholder text `YOUR_API_KEY_HERE` which you must replace when running locally.
 
 ---
 
-**Ready to continue?** Just let me know once your OpenAI billing is set up!
+## 📝 Current Task
+
+Waiting for The Last Mix Tape story content to be added to the repository.
